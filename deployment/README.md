@@ -1,14 +1,20 @@
 # Build 
 
-The build is being done by the way of using github actions. using the simple docker build workflow (amazingly easy they covered so much of the basics also it is fast)
-the image is being pushed into the repository packages hosting (github container registry)
+The build is being done by the way of using github actions. using the simple docker build workflow (amazingly easy they covered so much of the basics also it is fast).
+
+the image is being pushed into the repository packages hosting (github container registry).
+
 it is being done using multi stage build which i can't explain much since i dislike java.
+
 however it is using the recommended practices of springboot to split the created jar into folder and run it in the new container. 
 
 # Deploy
 Finally was able to use pulumi for something and very impressed. 
+
 this is using the new pulumi cloud abstraction over aws. 
-running the deploy requires installing pulumi cli and running npm install to bring the relevant folders. 
+
+running the deploy requires installing pulumi cli and running npm install to bring the relevant folders.
+
 see [Pulumi install](https://www.pulumi.com/docs/get-started/install/)
 
 ## Deployment steps:

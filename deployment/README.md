@@ -20,13 +20,19 @@ see [Pulumi install](https://www.pulumi.com/docs/get-started/install/)
 ## Deployment steps:
 Prerequisites:
 1. install pulumi
-2. install nodejs
-3. setup aws credentials (might include installing aws cli)
+2. install nodejs (i like using nvm after installing it from brew install nvm, than using nvm install )
+3. install git + setup git
+4. setup aws credentials (might include installing aws cli)
+5. clone the repository 
+```
+git clone [https://github.com/srgrn/spring-petclinic.git](https://github.com/srgrn/spring-petclinic.git)
+cd spring-petclinic
+```
 
-Steps:
-1. go into deployment folder 
+Deploy:
+1. go into deployment folder ``` cd deployment ```
 2. run  ``` npm install ```
-3. run ``` pulumi up ```
+3. run ``` pulumi up ``` (you might need to register to pulumi at that stage. or be part of a pulumi org)
 4. wait until command finishes collect the output (url for new dev service) in the form of:
 ``` 
 Outputs:
